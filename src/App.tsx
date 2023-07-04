@@ -1,24 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MatchCarousel from './components/MatchCarousel';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Match Carousel Example Max 15</h2>
+      <MatchCarousel max={15} />
+      <h2 style={{ marginTop: 20 }}>Match Carousel Example Sport Id 2</h2>
+      <MatchCarousel sportId={2} />
     </div>
   );
 }

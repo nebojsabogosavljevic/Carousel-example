@@ -1,0 +1,18 @@
+1. Src contents list:
+    - component (All components that we use in this project, Card and MatchCarousel)
+    - services (Middleware for frontend where we make calls to our apis)
+    - App .tsx, .css, .test.tsx (Main files for main component, design and tests)
+    - Other files created by default
+
+2. package.json - no added modules
+
+3. Potential improvements
+    - I used nested for loops for extracting data from about matches and teams,
+    I know that it is not the most professional way to nest so many loops, but in 
+    this case it looked easiest and most secure way instead of using some filter or map,
+    or some npm module.
+
+    - I couldn't get teams/players logos from url that your example provided,
+    'http://ls.betradar.com/ls/crest/big/<team_id>.png' - I got error that its
+    not accessible, so I have used country codes to get their flags and for players
+    I put default pictures that state that image is not available.
